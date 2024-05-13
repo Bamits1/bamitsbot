@@ -1,6 +1,6 @@
 var audio = new Audio('assets/sentmessage.mp3');
 var contactString = "<div class='social'> <a target='_blank' href='tel:+233599788509'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>+233599788509</label></div> </a> <a href='bamitstech@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Bamits1'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.link/yjd7a4'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/bamits'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='bamitstech@gmial.com'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
-var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Bamitstech Resume.pdf</label></div><a href='assets/r.pdf' download='bamitstech_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
+var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Bamitstech Resume.pdf</label></div><a href='assets/r.pdf' download='bamits_resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
 var addressString = "<div class='mapview'><iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.2988377964015!2d-0.2140695584148311!3d5.656492698997106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd75acda8dad6c7%3A0x54d7f230d093d236!2sGhana!5e0!3m2!1sen!2sgh!4v1714761156706!5m2!1sen!2sgh class= map></iframe></div><label class='add'><address>Sunyani(Bui) 'Fiapre'<br>Bamitech<br>Center, New , Ghana 2024</address>";
 function startFunction() {
     setLastSeen();
@@ -73,7 +73,7 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Bamits Tech </a>.</span><br><br>I am a Information Technology student at <span class='bold'>Uenr. Sunyani University 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the Tech sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Bamits Tech </a>.</span><br><br>I am an Information Technology student at <span class='bold'>Uenr. Sunyani University 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the Tech sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
             }, 2000);
             break;
         case "help":
@@ -83,11 +83,11 @@ function waitAndResponce(inputText) {
             sendTextMessage(resumeString);
             break;
         case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing Bsc degree in Information Technology.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Arch Linux</span> as daily driver on my HP Pavilion 15-ec0xxx<br>OS:Arch Linux<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode<br>An Ethical Hacker <br>Cyber security Expert<br>Web Developer<br>Web Hoster <br>Graphic Design</span>");
+            sendTextMessage("<span class='sk'>I am currently pursuing Bsc degree in Information Technology.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experianced with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Arch Linux</span> as daily driver on my HP Pavilion 15-ec0xxx<br>OS:Arch Linux<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode<br>An Ethical Hacker <br>Cyber security Expert<br>Web Developer<br>Web Hoster <br>Graphic Design</span>");
             break;
 
         case "education":
-            sendTextMessage("I am currently pusuing Bsc degree in Information Technology from UENR<br>Passing Year : 2025<br><br>I have completed my Senior High At Banstech<br>Passing Year:2020<br>Result:86.06%<br><br>I have completed my Junior school from local school known as BPA<br>Passing Year:2017");
+            sendTextMessage("I am currently pursuing Bsc degree in Information Technology from UENR<br>Passing Year : 2025<br><br>I completed my Senior High At Banstech<br>Passing Year:2020<br>Result:86.06%<br><br>I completed my Junior school from a local school known as BPA<br>Passing Year:2017");
             break;
        
         
@@ -95,14 +95,14 @@ function waitAndResponce(inputText) {
             sendTextMessage("Hello!! how may i help you");
             break;
         case "how are you doing":
-            sendTextMessage("I doont know how my master is doing please type contact and contact him");
+            sendTextMessage("I dont know how my master is doing please type contact and contact");
             break;
         case "how are you":
-            sendTextMessage("I dont know how my master is doing please type contact and contact him");
+            sendTextMessage("I dont know how my master is doing please type contact and contact");
             break;
 
         case "hi":
-            sendTextMessage("Hello!! how may i help you");
+            sendTextMessage("Hello!! how may i help you?");
             break;
         
         case "address":
@@ -123,7 +123,7 @@ function waitAndResponce(inputText) {
        
         default:
             setTimeout(() => {
-                sendTextMessage("Hey I couldn't catch up buddy...😢<br>Send 'help' to know more about usage. Bam! <br> Or type about to know about me");
+                sendTextMessage("Hey I couldn't catch up buddy...😢<br>Send 'help' to know more about usage. Bam! ");
             }, 2000);
             break;
     }
